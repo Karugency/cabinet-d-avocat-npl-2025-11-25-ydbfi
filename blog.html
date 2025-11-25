@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog du Cabinet d'avocat NPL - Articles juridiques, conseils en droit commercial, droit des sociétés et actualités légales.">
+    <meta name="keywords" content="blog juridique, droit commercial, droit des sociétés, conseils juridiques, actualités légales">
+    <meta name="author" content="Cabinet d'avocat NPL">
+    <meta property="og:title" content="Blog - Cabinet d'avocat NPL">
+    <meta property="og:description" content="Découvrez nos articles d'expertise en droit commercial et droit des sociétés">
+    <meta property="og:type" content="website">
+    <title>Blog - Cabinet d'avocat NPL | Articles Juridiques & Conseils</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+        }
+        
+        .gradient-primary-hover:hover {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+            filter: brightness(1.1);
+        }
+        
+        .gradient-btn {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .gradient-btn:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(255, 90, 95, 0.2);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255, 90, 95, 0.1) 0%, rgba(255, 209, 102, 0.05) 100%);
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, rgba(255, 90, 95, 0.3) 0%, rgba(255, 209, 102, 0.3) 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 90, 95, 0.1);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white">
+    <!-- Header -->
+    <header class="w-full">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="https://Karugency.github.io/cabinet-d-avocat-npl-2025-11-25-ydbfi" class="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-300">
+                <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+                    <i data-lucide="briefcase" class="w-6 h-6 text-white"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tight">NPL</span>
+            </a>
+
+            <!-- Back Link -->
+            <a href="https://Karugency.github.io/cabinet-d-avocat-npl-2025-11-25-ydbfi" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium flex items-center gap-2">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="hero-gradient relative overflow-hidden py-20 md:py-32 lg:py-40">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-red-500/10 to-transparent rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-yellow-500/10 to-transparent rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                    Notre <span class="text-gradient">Blog</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Expertise Juridique & Conseils Pratiques
+                </p>
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Découvrez nos articles approfondis sur le droit commercial, le droit des sociétés et les enjeux juridiques actuels pour les entrepreneurs et les entreprises.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-16 md:py-24 bg-gray-900/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">À Propos de Notre Blog</h2>
+                <p class="text-lg text-gray-300 leading-relaxed mb-8">
+                    Bienvenue sur le blog du Cabinet d'avocat NPL. Nous partageons régulièrement des articles d'expertise couvrant les domaines clés du droit commercial, du droit des sociétés, et du droit civil. Notre objectif est de vous fournir des conseils pratiques, des analyses approfondies et une compréhension claire des enjeux juridiques qui impactent votre activité.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Que vous soyez entrepreneur, dirigeant d'entreprise ou simplement intéressé par les actualités juridiques, nos articles vous aideront à mieux comprendre le paysage légal complexe et à prendre des décisions éclairées pour votre entreprise.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="py-16 md:py-24 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Article Récent</h2>
+                <p class="text-xl text-gray-400">Nos dernières publications</p>
+            </div>
+
+            <!-- Featured Post Card -->
+            <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 md:p-12 hover:border-red-500/50 mb-16">
+                <div class="mb-6">
+                    <span class="inline-block bg-gradient-to-r from-red-500/20 to-yellow-500/20 text-gray-300 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        25 Novembre 2025
+                    </span>
+                </div>
+                
+                <h3 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    Les Enjeux Juridiques du Droit Commercial en 2025 : Guide Complet pour les Entrepreneurs
+                </h3>
+                
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    Le droit commercial en 2025 présente des défis sans précédent pour les entrepreneurs naviguant dans la transformation numérique, les réglementations plus strictes et l'évolution des modèles commerciaux. Ce guide complet explore les enjeux juridiques critiques : la conformité numérique et la protection des données selon le RGPD, les contrats commerciaux essentiels, la structure et la gouvernance d'entreprise, la protection de la propriété intellectuelle, la conformité fiscale, les obligations en droit du travail, et la gestion de la responsabilité civile. Le succès nécessite de comprendre ces domaines complexes et de s'associer avec des experts juridiques spécialisés. L'investissement stratégique dans des conseils juridiques professionnels n'est pas seulement protecteur—il est essentiel pour une croissance durable. Cabinet NPL fournit des conseils experts dans tous les aspects du droit commercial, permettant aux entrepreneurs de se concentrer sur le développement commercial tout en assurant des fondations juridiques robustes.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 pt-8 border-t border-gray-700">
+                    <a href="https://Karugency.github.io/cabinet-d-avocat-npl-2025-11-25-ydbfi/blog/les-enjeux-juridiques-du-droit-commercial-en-2025-.html" class="gradient-btn text-white font-bold px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center gap-2">
+                        <span>Lire l'Article Complet</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <button class="border-2 border-gray-600 text-white font-bold px-8 py-4 rounded-full hover:border-white hover:bg-gray-900 transition-all duration-300 inline-flex items-center justify-center gap-2">
+                        <span>Partager</span>
+                        <i data-lucide="share-2" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Other Blog Posts Grid -->
+            <div>
+                <h3 class="text-3xl font-bold tracking-tight mb-8">Autres Articles</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Placeholder Post 1 -->
+                    <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50 hover:shadow-lg opacity-50 pointer-events-none">
+                        <div class="mb-4">
+                            <span class="inline-block text-gray-400 text-sm font-semibold">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                À venir
+                            </span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-gray-400">Article à venir</h4>
+                        <p class="text-gray-400 mb-6">
+                            Nous préparons de nouveaux articles pour enrichir votre connaissance en droit commercial et droit des sociétés.
+                        </p>
+                        <a href="#" class="text-gray-500 font-semibold inline-flex items-center gap-2">
+                            <span>Lire plus</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <!-- Placeholder Post 2 -->
+                    <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50 hover:shadow-lg opacity-50 pointer-events-none">
+                        <div class="mb-4">
+                            <span class="inline-block text-gray-400 text-sm font-semibold">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                À venir
+                            </span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-gray-400">Article à venir</h4>
+                        <p class="text-gray-400 mb-6">
+                            Nous préparons de nouveaux articles pour enrichir votre connaissance en droit commercial et droit des sociétés.
+                        </p>
+                        <a href="#" class="text-gray-500 font-semibold inline-flex items-center gap-2">
+                            <span>Lire plus</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <!-- Placeholder Post 3 -->
+                    <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50 hover:shadow-lg opacity-50 pointer-events-none">
+                        <div class="mb-4">
+                            <span class="inline-block text-gray-400 text-sm font-semibold">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                À venir
+                            </span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-gray-400">Article à venir</h4>
+                        <p class="text-gray-400 mb-6">
+                            Nous préparons de nouveaux articles pour enrichir votre connaissance en droit commercial et droit des sociétés.
+                        </p>
+                        <a href="#" class="text-gray-500 font-semibold inline-flex items-center gap-2">
+                            <span>Lire plus</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=600&fit=crop'); opacity: 0.15;"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/80 to-gray-950"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                Restez Informé des Actualités Juridiques
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Abonnez-vous à notre newsletter pour recevoir nos derniers articles et conseils juridiques directement dans votre boîte mail.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+                <input 
+                    type="email" 
+                    placeholder="Votre adresse email" 
+                    class="flex-1 px-6 py-4 rounded-full bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-red-500 transition-colors duration-300"
+                >
+                <button class="gradient-btn text-white font-bold px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 whitespace-nowrap">
+                    S'abonner
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+                            <i data-lucide="briefcase" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">NPL</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Excellence juridique et service personnalisé pour vos enjeux les plus importants.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Domaines</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://Karugency.github.io/cabinet-d-avocat-npl-2025-11-25-ydbfi#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Droit Civil & Pénal</a></li>
+                        <li><a href="https://Karugency.github.io/cabinet-d-avocat-npl-2025-11-25-ydbfi#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Droit Commercial</a></li>
+                        <li><a href="https://Karugency.github.io/cabinet-d-avocat-npl-2025-11-25-ydbfi#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Droit des Sociétés</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Entreprise</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://Karugency.github.io/cabinet-d-avocat-npl-2025-11-25-ydbfi#about" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">À propos</a></li>
+                        <li><a href="https://Karugency.github.io/cabinet-d-avocat-npl-2025-11-25-ydbfi#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Témoignages</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Légal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Politique de Confidentialité</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Conditions d'Utilisation</a></li>
+                        <li><a href="mailto:cabinet@nplavocats.com" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="section-divider h-px mb-8"></div>
+
+            <!-- Bottom -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-gray-400 text-sm">
+                    © 2025 Cabinet d'avocat NPL. Tous droits réservés.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
