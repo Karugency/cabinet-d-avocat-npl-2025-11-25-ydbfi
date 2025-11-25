@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cabinet d'avocat NPL - Excellence Juridique & Service Personnalisé. Conseil juridique, droit commercial, droit des sociétés.">
+    <meta name="keywords" content="avocat, droit, affaires, juridique, droit commercial, droit des sociétés">
+    <meta name="author" content="Cabinet d'avocat NPL">
+    <meta property="og:title" content="Cabinet d'avocat NPL - Excellence Juridique & Service Personnalisé">
+    <meta property="og:description" content="Conseil juridique expert en droit commercial et droit des sociétés">
+    <meta property="og:type" content="website">
+    <title>Cabinet d'avocat NPL | Excellence Juridique & Service Personnalisé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+        }
+        
+        .gradient-primary-hover:hover {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+            filter: brightness(1.1);
+        }
+        
+        .gradient-btn {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .gradient-btn:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(255, 90, 95, 0.2);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255, 90, 95, 0.1) 0%, rgba(255, 209, 102, 0.05) 100%);
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, rgba(255, 90, 95, 0.3) 0%, rgba(255, 209, 102, 0.3) 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #FF5A5F 0%, #FFD166 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background-color: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 90, 95, 0.1);
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white">
+    <!-- Header -->
+    <header class="w-full">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+                    <i data-lucide="briefcase" class="w-6 h-6 text-white"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tight">NPL</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Domaines</a>
+                <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Services</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Témoignages</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">À propos</a>
+            </div>
+
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:block">
+                <a href="https://rdv.nplavocat.com" class="gradient-btn text-white font-semibold px-8 py-3 rounded-full hover:shadow-lg transition-all duration-300">
+                    Prendre RDV
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-800 transition-colors duration-300">
+                <i class="fas fa-bars text-white text-xl"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-gray-900 border-b border-gray-800 md:hidden">
+                <div class="flex flex-col space-y-4 px-4 sm:px-6 lg:px-8 py-6">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Domaines</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Services</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">Témoignages</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300 font-medium">À propos</a>
+                    <a href="https://rdv.nplavocat.com" class="gradient-btn text-white font-semibold px-8 py-3 rounded-full text-center hover:shadow-lg transition-all duration-300 block">
+                        Prendre RDV
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden py-20 md:py-32 lg:py-40">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-red-500/10 to-transparent rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-yellow-500/10 to-transparent rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center animate-fade-in-up">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                    Cabinet d'avocat <span class="text-gradient">NPL</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Excellence Juridique & Service Personnalisé
+                </p>
+                <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                    Nous vous offrons une expertise juridique de premier plan pour vos enjeux commerciaux et sociétaux les plus complexes.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://rdv.nplavocat.com" class="gradient-btn text-white font-bold px-8 py-4 rounded-full hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center gap-2">
+                        <span>Prendre RDV</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#about" class="border-2 border-gray-600 text-white font-bold px-8 py-4 rounded-full hover:border-white hover:bg-gray-900 transition-all duration-300 inline-flex items-center justify-center gap-2">
+                        <span>En savoir plus</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Nos Domaines de Compétence</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Une expertise multidisciplinaire au service de vos enjeux juridiques
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50">
+                    <div class="w-14 h-14 rounded-full gradient-primary flex items-center justify-center mb-6">
+                        <i data-lucide="scale-3" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Droit Civil & Pénal</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Nous vous accompagnons dans tous les litiges civils et pénaux, en tant que conseil ou représentant devant les juridictions compétentes. Notre approche personnalisée garantit une défense robuste de vos intérêts.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50">
+                    <div class="w-14 h-14 rounded-full gradient-primary flex items-center justify-center mb-6">
+                        <i data-lucide="briefcase" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Droit Commercial</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Spécialistes du droit commercial, nous conseillons les entreprises sur les contrats, les acquisitions, les négociations et les stratégies commerciales pour optimiser vos opérations.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50">
+                    <div class="w-14 h-14 rounded-full gradient-primary flex items-center justify-center mb-6">
+                        <i data-lucide="building-2" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Droit des Sociétés</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        De la constitution à la restructuration, nous guidons votre entreprise à travers les enjeux juridiques les plus délicats. Gouvernance, fusion-acquisition, cessions : notre expertise est votre atout.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24 bg-gray-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Nos Services Juridiques</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Des solutions complètes pour sécuriser votre activité
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Benefit 1 -->
+                <div class="card-hover flex gap-6 p-8 bg-gray-800/30 border border-gray-700/50 rounded-2xl hover:bg-gray-800/50 hover:border-red-500/30">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg gradient-primary">
+                            <i data-lucide="check-circle" class="w-6 h-6 text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Conseil Juridique Stratégique</h3>
+                        <p class="text-gray-400">
+                            Nos avocats expérimentés vous conseillent sur les meilleures stratégies juridiques pour atteindre vos objectifs commerciaux tout en minimisant les risques légaux.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="card-hover flex gap-6 p-8 bg-gray-800/30 border border-gray-700/50 rounded-2xl hover:bg-gray-800/50 hover:border-red-500/30">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg gradient-primary">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Droit Commercial Avancé</h3>
+                        <p class="text-gray-400">
+                            Rédaction de contrats, négociations commerciales, protection de la propriété intellectuelle et gestion des relations B2B complexes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="card-hover flex gap-6 p-8 bg-gray-800/30 border border-gray-700/50 rounded-2xl hover:bg-gray-800/50 hover:border-red-500/30">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg gradient-primary">
+                            <i data-lucide="trending-up" class="w-6 h-6 text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Droit des Sociétés Complet</h3>
+                        <p class="text-gray-400">
+                            Création, restructuration, fusion-acquisition, cessions d'actifs et gestion de gouvernance pour sécuriser la croissance de votre entreprise.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="card-hover flex gap-6 p-8 bg-gray-800/30 border border-gray-700/50 rounded-2xl hover:bg-gray-800/50 hover:border-red-500/30">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg gradient-primary">
+                            <i data-lucide="award" class="w-6 h-6 text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Représentation Judiciaire</h3>
+                        <p class="text-gray-400">
+                            Défense devant tous les tribunaux avec une stratégie juridique adaptée à votre situation. Nous vous représentons avec passion et expertise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=600&fit=crop'); opacity: 0.15;"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-950/80 to-gray-950"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                Prêt à sécuriser vos enjeux juridiques ?
+            </h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Contactez notre cabinet pour une consultation gratuite et découvrez comment nous pouvons vous aider à atteindre vos objectifs légaux.
+            </p>
+            <a href="https://rdv.nplavocat.com" class="gradient-btn text-white font-bold px-10 py-4 rounded-full hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center gap-2 text-lg">
+                <span>Prendre RDV Gratuit</span>
+                <i data-lucide="arrow-right" class="w-6 h-6"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Témoignages de nos Clients</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    La satisfaction de nos clients est notre plus belle référence
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50 hover:shadow-lg">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "Le cabinet NPL a transformé notre approche juridique. Leur expertise en droit des sociétés nous a permis de finaliser notre fusion en toute sérénité. Équipe exceptionnelle et très réactive."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Marie Dubois</p>
+                        <p class="text-sm text-gray-400">PDG, Tech Solutions France</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50 hover:shadow-lg">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "Professionnalisme remarquable. Maître Laurent nous a accompagnés dans un litige commercial complexe avec une stratégie impeccable. Résultat dépassant nos attentes."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Jean-Pierre Moreau</p>
+                        <p class="text-sm text-gray-400">Directeur Général, Groupe Moreau</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50 hover:shadow-lg">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "Conseil juridique de haut niveau. Ils nous ont aidés à restructurer notre société avec une efficacité remarquable. Très recommandé pour toute question de droit commercial."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Sophie Bernard</p>
+                        <p class="text-sm text-gray-400">Avocate, Cabinet Associé</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-gray-800/50 backdrop-blur border border-gray-700 rounded-2xl p-8 hover:border-red-500/50 hover:shadow-lg">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        "Équipe dévouée et compétente. Leur réactivité et leur connaissance approfondie du droit des affaires nous ont permis de naviguer avec succès dans des négociations délicates."
+                    </p>
+                    <div>
+                        <p class="font-bold text-white">Thomas Leclerc</p>
+                        <p class="text-sm text-gray-400">Entrepreneur, Leclerc Innovations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">À Propos du Cabinet NPL</h2>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-gray-800/30 border border-gray-700/50 rounded-2xl p-8 md:p-12 hover:border-red-500/30 transition-all duration-300">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Fondé en 2008 par trois avocats passionnés par l'excellence juridique, le Cabinet NPL s'est construit sur des principes solides : intégrité, compétence et dévouement envers nos clients. Au fil des années, nous avons développé une expertise reconnue dans les domaines du droit commercial, du droit des sociétés et du droit civil. Notre croissance organique témoigne de la confiance que nos clients placent en nous et de notre capacité à résoudre les enjeux juridiques les plus complexes.
+                    </p>
+                </div>
+
+                <div class="bg-gray-800/30 border border-gray-700/50 rounded-2xl p-8 md:p-12 hover:border-red-500/30 transition-all duration-300">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Notre mission est simple mais ambitieuse : fournir un conseil juridique de premier ordre qui crée de la valeur pour nos clients. Nous croyons que chaque client mérite une attention personnalisée et une stratégie juridique adaptée à sa situation unique. Nos valeurs fondamentales — l'excellence, l'intégrité, la réactivité et l'innovation — guident chaque décision que nous prenons. Aujourd'hui, avec une équipe de plus de 15 professionnels, nous continuons à grandir en restant fidèles à nos principes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-gradient mb-2">15+</div>
+                    <p class="text-gray-400">Professionnels du droit</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-gradient mb-2">500+</div>
+                    <p class="text-gray-400">Clients satisfaits</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-gradient mb-2">16</div>
+                    <p class="text-gray-400">Années d'expérience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+    <!-- Contact Form Section - Centered Card Layout -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+            <input type="hidden" name="access_key" value="23ea05a1-80ad-4b26-a3cf-95ea5edb7754">
+            <input type="hidden" name="redirect" value="false">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <div>
+              <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="John Doe"
+              >
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                required 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="john@example.com"
+              >
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                Phone Number
+              </label>
+              <input 
+                type="tel" 
+                name="phone" 
+                id="phone" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none"
+                placeholder="+1 (555) 000-0000"
+              >
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                Message <span class="text-red-500">*</span>
+              </label>
+              <textarea 
+                name="message" 
+                id="message" 
+                required 
+                rows="5" 
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 outline-none resize-none"
+                placeholder="Tell us about your project or inquiry..."
+              ></textarea>
+            </div>
+
+            <div class="pt-4">
+              <button 
+                type="submit" 
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl"
+              >
+                Send Message
+              </button>
+            </div>
+
+            <div id="form-result" class="hidden mt-4 p-4 rounded-lg text-center font-medium"></div>
+          </form>
+        </div>
+
+        <div class="mt-12 text-center">
+          <p class="text-gray-600">
+            Or email us directly at <a href="mailto:hello@example.com" class="text-blue-600 hover:text-blue-700 font-semibold">hello@example.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function() {
+        const form = document.querySelector('form[action*="web3forms"]');
+        const resultDiv = document.getElementById('form-result');
+        
+        if (!form) return;
+        
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          const formData = new FormData(form);
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+          
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+          resultDiv.classList.add('hidden');
+          
+          try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: formData
+            });
+            
+            const data = await response.json();
+            
+            if (response.ok && data.success) {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-green-50 text-green-800 border border-green-200';
+              resultDiv.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+              form.reset();
+            } else {
+              resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+              resultDiv.textContent = data.message || 'Something went wrong. Please try again.';
+            }
+          } catch (error) {
+            resultDiv.className = 'block mt-4 p-4 rounded-lg text-center font-medium bg-red-50 text-red-800 border border-red-200';
+            resultDiv.textContent = 'Network error. Please check your connection and try again.';
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+          }
+        });
+      })();
+    </script>
+  <footer class="bg-gray-900 border-t border-gray-800 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+                            <i data-lucide="briefcase" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">NPL</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Excellence juridique et service personnalisé pour vos enjeux les plus importants.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Domaines</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Droit Civil & Pénal</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Droit Commercial</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Droit des Sociétés</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Entreprise</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">À propos</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Témoignages</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-bold text-white mb-4">Légal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Politique de Confidentialité</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Conditions d'Utilisation</a></li>
+                        <li><a href="mailto:cabinet@nplavocats.com" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="section-divider h-px mb-8"></div>
+
+            <!-- Bottom -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-gray-400 text-sm">
+                    © 2025 Cabinet d'avocat NPL. Tous droits réservés.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
